@@ -22,7 +22,7 @@ public class Merge {
         }
         else
         {
-            int mid = lo + (hi-lo) / 2;
+            int mid = lo + (hi- lo) / 2;
             sort(a, aux, lo, mid);
             sort(a, aux, mid + 1, hi);
             merge(a, aux, lo, mid, hi);
@@ -77,7 +77,7 @@ public class Merge {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        int[] a = {4,7,1,3,9,0,5,2,8,6}; 
+        int[] a = {4,7,1,3,9,0,5,2}; 
         System.out.println("Elements Before Sorting:");
          for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
